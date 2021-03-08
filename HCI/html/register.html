@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/register.css">
+    
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/register.js"></script>
+    <title>Store Del Luna</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="left-header">
+            <!-- Logo Here -->
+
+            <a href="index.html" class="item-header">
+                <div>Home</div>
+            </a>
+            <div class="desktop item-header d-container">Products
+                <div class="dc">
+                    <a href="albums.html" class="item-header sub">
+                        <div>Albums</div>
+                    </a>
+                    <a href="merchandises.html" class="item-header sub">
+                        <div>Merchandises</div>
+                    </a>
+                </div>
+            </div>
+            <a href="albums.html" class="item-header mobile">
+                <div>Albums</div>
+            </a>
+            <a href="merchandises.html" class="item-header mobile">
+                <div>Merchandises</div>
+            </a>
+            <a href="testimonial.html" class="item-header">
+                <div>Testimonial</div>
+            </a>
+        </div>
+        <div class="right-header">
+            <a href="register.html" class="item-header">
+                <div>Register</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="background"></div>
+    <div class="failLbl">Fail</div>
+    
+    <div class="content">
+        <div class="left-content">
+            <img src="../assets/images/register1.png" alt="">
+        </div>
+        <div class="right-content">
+            <form action="" method="get" id="registerForm">
+                <div class="input-container">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="input-container">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" name="confirm" id="confirm">
+                </div>
+                <div class="input-container">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+                <div class="input-container-keep">
+                    <label for="gender">Gender</label>
+                    <div style="flex: 3">
+                        <input type="radio" name="gender" id="gender" value="Male">Male
+                        <input type="radio" name="gender" id="gender" value="Female">Female
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-container">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age">
+                </div>
+                <div class="input-container-keep">
+                    <input type="checkbox" style="flex: 1" name="term" id="term">
+                    <label for="term" style="flex: 10">I agree to terms and conditions</label>
+                </div>
+                <div class="button-container">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="top-footer">
+            <div class="left-footer">
+                <!-- Logo Here -->
+            </div>
+            <div class="right-footer">
+                <div class="m-text">
+                    Follow us :
+                </div> 
+                <a href="https://www.facebook.com/">
+                    <div class="social-media-container">
+                        <img src="../assets/images/facebook1.png" class="fb-logo" alt="">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <div class="social-media-container">
+                        <img src="../assets/images/instagram1.png" class="ig-logo" alt="">
+                    </div>
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <div class="social-media-container">
+                        <img src="../assets/images/twitter1.png" class="tw-logo" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="bottom-footer">
+            <div class="s-text">
+                &copy 2020. All Right Reserved | FG20-1 - DU20-1
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

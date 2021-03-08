@@ -1,0 +1,151 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    margin: 5rem;
+    background-color: white;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 5px 5px gray;
+    position: relative;
+    height: 30rem;
+}
+
+.left-content {
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    border-left: 1px solid black;
+    padding-left: 1rem;
+}
+
+.failLbl {
+    width: 100%;
+    background-color: rgb(245, 93, 93);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    display: none;
+    position: absolute;
+}
+
+@media only screen and (min-width: 768px){
+    .left-content {
+        flex: 1;
+    }
+
+    .right-content {
+        flex: 1;
+    }
+}
+
+.left-content > img{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.input-container, .input-container-keep {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-family);
+}
+
+.input-container, .input-container-keep > * {
+    margin: 0.7rem;
+}
+
+label {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+label > div {
+    margin-top: 0.25rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+input {
+    flex: 3;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 0.5rem;
+    font-family: var(--font-family);
+}
+
+input[type="submit"]{ 
+    border-bottom: 0;
+    font-family: var(--font-family);
+    transition: 0.3s ease-in-out;
+    border-radius: 3%;
+    margin: 2rem;
+}
+
+input[type="submit"]:hover{ 
+    background-color: darkgray;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px){  
+    .content {
+        padding: 2rem;
+        flex-direction: column;
+        height: 40rem;
+    }
+
+    .left-content > img{
+        max-width: 40%;
+    }
+
+    .right-content {
+        margin-left: 0;
+        padding-left: 0;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 600px){  
+    .content {
+        padding: 2rem 1rem;
+        height: 57rem;
+        margin: 6rem 2rem;
+    }
+
+    .left-content > img{
+        max-width: 70%;
+    }
+
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-container > * {
+        margin: 0.3rem;
+    }
+
+    .failLbl {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
