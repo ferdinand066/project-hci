@@ -13,6 +13,7 @@
 
 .left-content {
     height: 100%;
+    max-width: 600px;
     width: auto;
     display: flex;
 }
