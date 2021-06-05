@@ -1,0 +1,103 @@
+label{
+  font-size: 1.3vw;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url(../image/parallax/bg7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.genre{
+  width: 70%;
+}
+
+.title{
+  width: 100%;
+  background-color: black;
+  font-size: 1.5vw;
+  color: white;
+  background-color: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  padding: 1% 2%;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: inset 0 0 1px black
+}
+
+.container{
+  box-sizing: border-box;
+}
+
+.artists{
+  display: none;
+  padding: 1% 2%;
+  background: rgb(255, 255, 255, 0.5)
+}
+
+.artists-content{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.items{
+  /* background-color: white; */
+  width: 100%;
+  margin: 5% 0%;
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: slategrey;
+  border-radius: 10px;
+  padding-top: 8%;
+}
+
+.item-image{
+  width: 80%;
+  border-radius: 100%;
+  box-shadow: 0 0 5px 5px rgba(255,255,255, 0.5)
+}
+
+.item-title{
+  padding: 15% 0 10% 0;
+  width: 100%;
+  color: white;
+}
+.container {
+  background-color: azure;
+  border-radius: 12px;
+  padding: 12px;
+  width: 70%;
+  margin: 12px
+}
+
+.container img {
+  float: left;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
