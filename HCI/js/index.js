@@ -1,54 +1,28 @@
 $(document).ready(function () {
     var i = 0;
     var max = 3;
-    var imgList = [
-        "../assets/images/image-slider/1.jpg",
-        "../assets/images/image-slider/2.jpg",
-        "../assets/images/image-slider/3.jpg",
-        "../assets/images/image-slider/4.png"
-    ]
-
+    var imageWidth = $('.slider-container>img').width();
     function nextSlide() { 
-        var curr = $('img.active');
-        curr.fadeOut(250);
-        setTimeout(()=>{
-            ++i;
-            i = i > max ? 0 : i;
-            curr.attr("src", (imgList[i]));
-            $('.dot.active').removeClass('active')
-            $('.'+i+'.dot').addClass('active')
-        }, 250);
-
-        curr.fadeIn(250);
+        ++i;
+        i = i > max ? 0 : i;
+        imageWidth = $('.slider-container>img').width();
+        $('.slider-container').animate({
+            left: '-' + i * imageWidth + 'px'
+        }, 700, ()=>{});
     }
     
     $('.next').click(nextSlide);
 
     $('.prev').click(function () { 
-        var curr = $('.active');
-        curr.fadeOut(250);
-        setTimeout(()=>{
-            --i;
-            i = i < 0 ? max : i;
-            curr.attr("src", (imgList[i]));
-            $('.dot.active').removeClass('active')
-            $('.'+i+'.dot').addClass('active')
-        }, 250);
-        curr.fadeIn(250);
+        --i;
+        i = i < 0 ? max : i;
+        imageWidth = $('.slider-container>img').width();
+        $('.slider-container').animate({
+            left: '-' + i * imageWidth + 'px'
+        }, 700, ()=>{});
     });
 
     setInterval(nextSlide, 5000);
-
-    $('.dot').click(function () { 
-        $(this).parent().children('.active')
-        $($(this).parent().children('.active')[0]).removeClass('active')
-        $(this).addClass('active')
-        
-        i = (parseInt($(this).attr('class').split(' ')) - 1)
-        nextSlide()
-        
-        
-    });
 
     $('.background').css('height', $('body').height())
 });
